@@ -21,7 +21,7 @@ export default function TrackOrder() {
 
   if (!activeOrder) {
     return (
-      <div className="min-h-screen bg-sky-50 pt-16 flex items-center justify-center page-enter">
+      <div className="min-h-screen bg-slate-50 pt-16 flex items-center justify-center page-enter">
         <div className="text-center">
           <div className="text-5xl mb-4">📦</div>
           <h2 className="text-xl font-bold text-gray-800 mb-2">No orders to track</h2>
@@ -35,7 +35,7 @@ export default function TrackOrder() {
   const currentStep = activeOrder.trackingStep ?? 2;
 
   return (
-    <div className="min-h-screen bg-sky-50 pt-16 page-enter">
+    <div className="min-h-screen bg-slate-50 pt-16 page-enter">
       <div className="bg-white border-b border-sky-100 py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="section-title mb-0">Track Your Order</h1>
