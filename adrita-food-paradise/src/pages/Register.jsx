@@ -30,7 +30,7 @@ export default function Register() {
   };
 
   return (
-    <div className="min-h-screen bg-sky-50 pt-16 flex items-center justify-center px-4 py-10 page-enter">
+    <div className="min-h-screen bg-slate-50 pt-16 flex items-center justify-center px-4 py-10 page-enter">
       <div className="w-full max-w-md">
         <div className="bg-white rounded-2xl shadow-sm border border-sky-100 p-8">
           {/* Logo */}
