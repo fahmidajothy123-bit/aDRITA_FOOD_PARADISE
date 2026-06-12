@@ -13,7 +13,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen bg-sky-50 pt-16 page-enter">
+    <div className="min-h-screen bg-blue-50 pt-16 page-enter">
       {/* Header */}
       <div className="bg-white border-b border-sky-100 py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
