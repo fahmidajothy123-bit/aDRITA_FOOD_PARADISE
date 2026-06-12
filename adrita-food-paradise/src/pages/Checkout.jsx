@@ -43,7 +43,7 @@ export default function Checkout() {
 
   if (cart.length === 0) {
     return (
-      <div className="min-h-screen bg-sky-50 pt-16 flex items-center justify-center page-enter">
+      <div className="min-h-screen bg-slate-50 pt-16 flex items-center justify-center page-enter">
         <div className="text-center">
           <p className="text-gray-500 mb-4">Your cart is empty.</p>
           <Link to="/menu" className="btn-primary">Browse Menu</Link>
@@ -53,7 +53,7 @@ export default function Checkout() {
   }
 
   return (
-    <div className="min-h-screen bg-sky-50 pt-16 page-enter">
+    <div className="min-h-screen bg-slate-50 pt-16 page-enter">
       <div className="bg-white border-b border-sky-100 py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="section-title mb-0">Checkout</h1>
