@@ -1,15 +1,31 @@
 import React, { useState } from 'react';
 import { MapPin, Phone, Mail, Clock, Send, CheckCircle2, MessageSquare } from 'lucide-react';
+import { apiRequest } from '../config/api';
 
 export default function Contact() {
   const [form, setForm] = useState({ name: '', email: '', phone: '', subject: '', message: '' });
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState('');
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => setForm(p => ({ ...p, [e.target.name]: e.target.value }));
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setSubmitted(true);
+    setError('');
+    setLoading(true);
+    try {
+      // Real backend call: POST /api/contact
+      await apiRequest('/contact', {
+        method: 'POST',
+        body: JSON.stringify(form),
+      });
+      setSubmitted(true);
+    } catch (err) {
+      setError(err.message || 'Could not send message. Please try again.');
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -74,8 +90,15 @@ export default function Contact() {
                       className="input-field resize-none"
                     />
                   </div>
-                  <button type="submit" className="w-full btn-primary flex items-center justify-center gap-2">
-                    <Send className="w-4 h-4" /> Send Message
+
+                  {error && (
+                    <div className="bg-red-50 border border-red-200 text-red-600 text-sm rounded-lg px-4 py-3">
+                      {error}
+                    </div>
+                  )}
+
+                  <button type="submit" disabled={loading} className="w-full btn-primary flex items-center justify-center gap-2 disabled:opacity-60">
+                    <Send className="w-4 h-4" /> {loading ? 'Sending...' : 'Send Message'}
                   </button>
                 </form>
               )}
