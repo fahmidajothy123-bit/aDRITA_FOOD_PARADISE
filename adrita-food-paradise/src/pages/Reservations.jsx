@@ -22,7 +22,7 @@ export default function Reservations() {
 
   if (submitted) {
     return (
-      <div className="min-h-screen bg-sky-50 pt-16 flex items-center justify-center page-enter">
+      <div className="min-h-screen bg-slate-50 pt-16 flex items-center justify-center page-enter">
         <div className="bg-white rounded-2xl p-10 text-center max-w-md mx-4 shadow-sm border border-sky-100">
           <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
             <CheckCircle2 className="w-8 h-8 text-green-500" />
@@ -46,7 +46,7 @@ export default function Reservations() {
   }
 
   return (
-    <div className="min-h-screen bg-sky-50 pt-16 page-enter">
+    <div className="min-h-screen bg-slate-50 pt-16 page-enter">
       {/* Header */}
       <div className="bg-white border-b border-sky-100 py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
