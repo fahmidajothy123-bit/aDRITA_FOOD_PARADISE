@@ -6,7 +6,8 @@ const connectDB = async () => {
     console.log(`✅ MongoDB Connected: ${conn.connection.host}`);
   } catch (error) {
     console.error(`❌ MongoDB connection error: ${error.message}`);
-    process.exit(1);
+    console.warn(`⚠️  Server is starting WITHOUT a database connection. Routes that use the DB (menu, auth, orders, etc.) will fail until MongoDB is connected.`);
+    // process.exit(1) removed temporarily for no-DB testing — put it back once MongoDB is set up.
   }
 };
 

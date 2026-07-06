@@ -10,16 +10,16 @@ export default function About() {
   ];
 
   const values = [
-    { icon: <Award className="w-6 h-6 text-orange-400" />, title: 'Quality First', desc: 'We never compromise on the quality of our food. The love we put into every dish speaks for itself.' },
-    { icon: <Heart className="w-6 h-6 text-orange-400" />, title: 'Made with Love', desc: 'Every meal is prepared with full attention to detail, just like home cooking.' },
-    { icon: <Users className="w-6 h-6 text-orange-400" />, title: 'Customer Focus', desc: 'Your satisfaction is our priority. We care, we listen, and we deliver excellence.' },
-    { icon: <TrendingUp className="w-6 h-6 text-orange-400" />, title: 'Innovation', desc: 'We continuously evolve our menu to surpass your expectations.' },
+    { icon: <Award className="w-6 h-6 text-orange-500" />, title: 'Quality First', desc: 'We never compromise on the quality of our food. The love we put into every dish speaks for itself.' },
+    { icon: <Heart className="w-6 h-6 text-orange-500" />, title: 'Made with Love', desc: 'Every meal is prepared with full attention to detail, just like home cooking.' },
+    { icon: <Users className="w-6 h-6 text-orange-500" />, title: 'Customer Focus', desc: 'Your satisfaction is our priority. We care, we listen, and we deliver excellence.' },
+    { icon: <TrendingUp className="w-6 h-6 text-orange-500" />, title: 'Innovation', desc: 'We continuously evolve our menu to surpass your expectations.' },
   ];
 
   return (
     <div className="min-h-screen bg-sky-50 pt-16 page-enter">
       {/* Hero */}
-      <div className="bg-gradient-to-r from-orange-400 to-orange-500 py-16">
+      <div className="hero-gradient py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl font-extrabold text-white mb-3" style={{fontFamily:'Poppins,sans-serif'}}>
             About Adrita's Food Paradise
@@ -92,7 +92,7 @@ export default function About() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {stats.map((s, i) => (
               <div key={i} className="text-center">
-                <div className="text-4xl font-extrabold text-orange-400 mb-1" style={{fontFamily:'Poppins,sans-serif'}}>
+                <div className="text-4xl font-extrabold text-orange-500 mb-1" style={{fontFamily:'Poppins,sans-serif'}}>
                   {s.value}
                 </div>
                 <div className="text-sm text-gray-500">{s.label}</div>
@@ -103,7 +103,7 @@ export default function About() {
       </div>
 
       {/* Mission */}
-      <div className="bg-gradient-to-r from-orange-400 to-rose-400 py-14">
+      <div className="promo-gradient py-14">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="w-14 h-14 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
             <Target className="w-7 h-7 text-white" />
