@@ -19,7 +19,7 @@ export default function Dashboard() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 pt-16 page-enter">
+    <div className="min-h-screen bg-sky-50 pt-16 page-enter">
       <div className="bg-white border-b border-sky-100 py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="section-title mb-0">My Dashboard</h1>
@@ -100,7 +100,7 @@ export default function Dashboard() {
         {/* Order History */}
         <div className="bg-white rounded-2xl border border-sky-100 p-6">
           <div className="flex items-center justify-between mb-4">
-            <h2 className="font-bold text-gray-800">Order History</h2>
+            <h2 className="font-bold text-gray-800">Order History see</h2>
           </div>
           <div className="overflow-x-auto">
             <table className="w-full text-sm">
